@@ -1,6 +1,6 @@
 syntax "po" "\.pot?$"
 
-KEYWORD:  "\<(msgid|msgstr)\>"
+KEYWORD:  "\b(msgid|msgstr)\b"
 +STRING
 ESCAPE:   "\\.?"
 +HASHCOMMENT

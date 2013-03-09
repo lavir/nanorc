@@ -2,7 +2,7 @@ syntax "yaml" "\.ya?ml$"
 header "^---" "%YAML"
 
 TYPE:     "(^| )!!(binary|bool|float|int|map|null|omap|seq|set|str) "
-BOOLEAN:  "\<(YES|yes|Y|y|ON|on|NO|no|N|n|OFF|off)\>"
+BOOLEAN:  "\b(YES|yes|Y|y|ON|on|NO|no|N|n|OFF|off)\b"
 +BOOLEAN
 OPERATOR: ":[[:space:]]" "\[" "\]" ":[[:space:]]+[|>]" "^[[:space:]]*- "
 VARIABLE: "[[:space:]][\*&][A-Za-z0-9]+"

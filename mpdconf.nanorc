@@ -1,7 +1,7 @@
 syntax "mpdconf" "mpd\.conf$"
 
-KEYWORD: "\<(user|group|bind_to_address|host|port|plugin|name|type)\>"
-KEYWORD: "\<((music|playlist)_directory|(db|log|state|pid|sticker)_file)\>"
+KEYWORD: "\b(user|group|bind_to_address|host|port|plugin|name|type)\b"
+KEYWORD: "\b((music|playlist)_directory|(db|log|state|pid|sticker)_file)\b"
 SECTION: "^(input|audio_output|decoder)[[:space:]]*\{|\}"
 +STRING
 +HASHCOMMENT

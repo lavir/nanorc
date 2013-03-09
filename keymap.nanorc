@@ -1,8 +1,8 @@
 syntax "keymap" "\.(k|key)?map$|Xmodmap$"
 
-KEYWORD:  "\<(add|clear|compose|keycode|keymaps|keysym|remove|string)\>"
-KEYWORD:  "\<(control|alt|shift)\>"
-NUMBER:   "\<[0-9]+\>"
+KEYWORD:  "\b(add|clear|compose|keycode|keymaps|keysym|remove|string)\b"
+KEYWORD:  "\b(control|alt|shift)\b"
+NUMBER:   "\b[0-9]+\b"
 OPERATOR: "="
 +STRING
 COMMENT:  "^!.*$"

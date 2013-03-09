@@ -1,16 +1,16 @@
 syntax "JavaScript" "\.js$"
 
-NUMBER:   "\<[-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?)?\>"
-NUMBER:   "\<[-+]?([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([EePp][+-]?[0-9]+)?[fFlL]?"
-NUMBER:   "\<[-+]?([0-9]+[EePp][+-]?[0-9]+)[fFlL]?"
+NUMBER:   "\b[-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?)?\b"
+NUMBER:   "\b[-+]?([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([EePp][+-]?[0-9]+)?[fFlL]?"
+NUMBER:   "\b[-+]?([0-9]+[EePp][+-]?[0-9]+)[fFlL]?"
 +FUNCTION
-KEYWORD:  "\<(break|case|catch|continue|default|delete|do|else|finally)\>"
-KEYWORD:  "\<(for|function|get|if|in|instanceof|new|return|set|switch)\>"
-KEYWORD:  "\<(switch|this|throw|try|typeof|var|void|while|with)\>"
-KEYWORD:  "\<(null|undefined|NaN)\>"
+KEYWORD:  "\b(break|case|catch|continue|default|delete|do|else|finally)\b"
+KEYWORD:  "\b(for|function|get|if|in|instanceof|new|return|set|switch)\b"
+KEYWORD:  "\b(switch|this|throw|try|typeof|var|void|while|with)\b"
+KEYWORD:  "\b(null|undefined|NaN)\b"
 +BOOLEAN
-TYPE:     "\<(Array|Boolean|Date|Enumerator|Error|Function|Math)\>"
-TYPE:     "\<(Number|Object|RegExp|String)\>"
+TYPE:     "\b(Array|Boolean|Date|Enumerator|Error|Function|Math)\b"
+TYPE:     "\b(Number|Object|RegExp|String)\b"
 OPERATOR: "[-+/*=<>!~%?:&|]"
 REGEXP:   "/[^*]([^/]|(\\/))*[^\\]/[gim]*"
 +STRING

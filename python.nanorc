@@ -1,14 +1,14 @@
 syntax "python" "\.py$" "jhbuildrc$"
 header "^#!.*/(env +)?python[-0-9._]*( |$)"
 
-KEYWORD:  "\<(as|assert|break|class|continue|def|del|elif|else|except)\>"
-KEYWORD:  "\<(exec|finally|for|from|global|if|import|lambda)\>"
-KEYWORD:  "\<(pass|print|raise|return|try|while|with|yield|None)\>"
+KEYWORD:  "\b(as|assert|break|class|continue|def|del|elif|else|except)\b"
+KEYWORD:  "\b(exec|finally|for|from|global|if|import|lambda)\b"
+KEYWORD:  "\b(pass|print|raise|return|try|while|with|yield|None)\b"
 +FUNCTION
-OPERATOR: "[-+*/|=%<>&~^]|\<(and|not|or|is|in)\>"
+OPERATOR: "[-+*/|=%<>&~^]|\b(and|not|or|is|in)\b"
 MACRO:    "@[A-Za-z0-9_]+"
 SECTION:  "__[A-Za-z0-9_]+__"
-BOOLEAN:  "\<(True|False)\>"
+BOOLEAN:  "\b(True|False)\b"
 +STRING
 STRING:   "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
 STRING:   "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"

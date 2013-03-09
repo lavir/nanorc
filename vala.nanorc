@@ -1,14 +1,14 @@
 syntax "vala" "\.vala$"
 
-TYPE:     "\<(float|double|bool|char|int|uint|short|long|void|(un)?signed)\>"
+TYPE:     "\b(float|double|bool|char|int|uint|short|long|void|(un)?signed)\b"
 +FUNCTION
-KEYWORD:  "\<(for|if|while|do|else|case|default|switch|try|throw|catch)\>"
-KEYWORD:  "\<(inline|typedef|struct|enum|union|extern|static|const)\>"
-KEYWORD:  "\<(operator|new|delete|return|null)\>"
-KEYWORD:  "\<(class|override|private|public|signal|this|weak)\>"
-JUMP:     "\<(goto|break|continue)\>"
+KEYWORD:  "\b(for|if|while|do|else|case|default|switch|try|throw|catch)\b"
+KEYWORD:  "\b(inline|typedef|struct|enum|union|extern|static|const)\b"
+KEYWORD:  "\b(operator|new|delete|return|null)\b"
+KEYWORD:  "\b(class|override|private|public|signal|this|weak)\b"
+JUMP:     "\b(goto|break|continue)\b"
 +BOOLEAN
-NUMBER:   "\<([0-9]+)\>"
+NUMBER:   "\b([0-9]+)\b"
 OPERATOR: "[-+/*=<>?:!~%&|]" "->"
 +STRING
 +CCOMMENT

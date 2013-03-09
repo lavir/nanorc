@@ -1,1 +1,1 @@
-BOOLEAN: "\<(true|false)\>"
+BOOLEAN: "\b(true|false)\b"

@@ -1,8 +1,8 @@
 syntax "inputrc" "inputrc$"
 
-color red   "\<(off|none)\>"
-color green "\<on\>"
-FUNCTION:   "\<set|\$include\>"
+color red   "\b(off|none)\b"
+color green "\bon\b"
+FUNCTION:   "\bset|\$include\b"
 +STRING
 ESCAPE:     "\\.?"
 +HASHCOMMENT

@@ -1,19 +1,19 @@
 syntax "cython" "\.(pyx|pxd|pyi)$"
 
 +FUNCTION
-KEYWORD:  "\<(and|as|assert|break|class|continue|def|del|elif|else|except)\>"
-KEYWORD:  "\<(exec|finally|for|from|global|if|import|in|is|lambda|not|or)\>"
-KEYWORD:  "\<(pass|print|raise|return|try|while|with|yield|None)\>"
-KEYWORD:  "\<(DEF|ELIF|ELSE|IF)\>"
+KEYWORD:  "\b(and|as|assert|break|class|continue|def|del|elif|else|except)\b"
+KEYWORD:  "\b(exec|finally|for|from|global|if|import|in|is|lambda|not|or)\b"
+KEYWORD:  "\b(pass|print|raise|return|try|while|with|yield|None)\b"
+KEYWORD:  "\b(DEF|ELIF|ELSE|IF)\b"
 
-KEYWORD:  "\<(cp?def( inline)?|cimport|cppclass|ctypedef|extern|include)\>"
-KEYWORD:  "\<(namespace|property|struct)\>"
-TYPE:     "\<(bint|char|double|int|public|void|unsigned)\>"
+KEYWORD:  "\b(cp?def( inline)?|cimport|cppclass|ctypedef|extern|include)\b"
+KEYWORD:  "\b(namespace|property|struct)\b"
+TYPE:     "\b(bint|char|double|int|public|void|unsigned)\b"
 
 OPERATOR: "[.:;,+*|=!\%@<>/&-]"
 MACRO:    "@[A-Za-z0-9_]+"
 SECTION:  "__[A-Za-z0-9_]+__"
-BOOLEAN:  "\<(True|False)\>"
+BOOLEAN:  "\b(True|False)\b"
 +STRING
 STRING:   "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
 STRING:   "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
